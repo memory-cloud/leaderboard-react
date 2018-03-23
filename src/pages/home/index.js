@@ -45,6 +45,6 @@ const QUERY = gql`
 export default graphql(QUERY, {
   options: (props) => {
     params = qs(props.location.search);
-    return { variables: { key: params.key, appid: params.appid }, pollInterval: 5000 }
+    return { variables: { key: params.key, appid: params.appid } }
   }
 })(App);
