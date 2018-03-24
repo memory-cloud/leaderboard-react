@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-export default ({leaderboard, appid, name}) => {
-  let url = '?key=' + leaderboard + '&appid=' + appid + '&name=' + name
+export default ({leaderboardkey, appid, name}) => {
+  let url = '?key=' + leaderboardkey + '&appid=' + appid + '&name=' + name
   return (
     <div>
-        <a href={url}>{name} ({leaderboard})</a>
+        <a href={url}>{name} ({leaderboardkey})</a>
     </div>
-  );
-};
+  )
+}

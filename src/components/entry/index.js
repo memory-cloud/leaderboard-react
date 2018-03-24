@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-export default ({id, score}) => {
-  let url = 'https://graph.facebook.com/' + id + '/picture?type=square'
+export default ({id, score, rank}) => {
+  let url = 'https://graph.facebook.com/' + id + '/picture'
   return (
     <div>
-      <img src={url} alt=''/>
-      {score}
+      {rank} <img src={url} alt=''/> {score}
     </div>
-  );
-};
+  )
+}
 
