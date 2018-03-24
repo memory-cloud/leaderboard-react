@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>{params.name}</h1>
+          <h1>{params.name ? params.name : 'Escolha um leaderboard'}</h1>
           <h2>{params.key}</h2>
         </header>
         <Button leaderboardkey="score" appid="922454064574463" name="Baseline" />
